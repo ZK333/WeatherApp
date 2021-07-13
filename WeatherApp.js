@@ -1,3 +1,4 @@
+
 const api = { // Connects to API
     key: "8027ac74e57f307a1753ea83071b2ad1",
     base: "https://api.openweathermap.org/data/2.5/"
@@ -5,8 +6,8 @@ const api = { // Connects to API
   const searchbox = document.querySelector('.search-box');
   searchbox.addEventListener('keypress', setQuery);
   
-  function setQuery(evt) {   // sets up enter key
-    if (evt.keyCode == 13) {
+  function setQuery(e) {   // sets up enter key
+    if (e.keyCode == 13) {
       getResults(searchbox.value);
     }
   }
@@ -32,8 +33,6 @@ const api = { // Connects to API
   
     var weather_el = document.querySelector('.current .weather');
     weather_el.innerText = weather.weather[0].main;
-  
-  
   }
   
   function dateBuilder (d) {
