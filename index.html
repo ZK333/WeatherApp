@@ -5,14 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Weather app</title>
-  <link rel="stylesheet" href="WeatherApp.css" />
+  <link rel="stylesheet" href="WeatherApp.css"/>
+  <script src="WeatherApp.js" defer></script>
+
 </head>
 <body>
-  <div class="app-wrap">
+  
+
+  <div class="app">
     <header>
-      <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city">
+      <input type="text" class="search-box" placeholder="Search for a city....">
     </header>
     <main>
+    
+      <div class="data">
       <section class="location">
         <div class="city">WeatherApp, <br> by Zarik Khan</div>
         <div class="date"></div>
@@ -23,6 +29,10 @@
       </div>
     </main>
   </div>
-  <script src="WeatherApp.js"></script>
+
+  </div>
+
+
+
 </body>
 </html>
