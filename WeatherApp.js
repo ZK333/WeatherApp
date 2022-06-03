@@ -25,8 +25,9 @@ const api = { // Connects to API
   
     var now = new Date();
     var date = document.querySelector('.location .date'); // displays the date
+
     date.innerText = dateBuilder(now);
-  
+
     var temp = document.querySelector('.current .temp');  //displays temp
     temp.innerHTML = `${Math.round(weather.main.temp)}<span>:C</span>`;
     temp.innerHTML=temp.innerHTML+" " +`${Math.round(weather.main.temp*1.8+32)}<span>:F</span>`;
